@@ -22,7 +22,10 @@ class MoviesView(GenreYear, ListView):
     """ Список фільмів """
     model = Movie
     queryset = Movie.objects.filter(draft=False)
+    # наш шаблон
     # template_name = "movies/movie_list.html"
+    # змінюємо назву зміни в якій є наші фільми
+    context_object_name = 'movies'
     paginate_by = 2
 
 

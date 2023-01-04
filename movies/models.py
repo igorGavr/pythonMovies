@@ -88,6 +88,8 @@ class Movie(models.Model):
     class Meta:
         verbose_name = "Фільм"
         verbose_name_plural = "Фільм"
+        # впорядковуємо наші фільми щоб не було помилок в консолі
+        ordering = ['id']
 
 
 class MovieShots(models.Model):
