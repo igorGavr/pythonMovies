@@ -1,4 +1,3 @@
-<!-- mian-content -->
 
 <!-- header -->
 {% load movie_tag %}
@@ -15,13 +14,13 @@
             <label for="drop" class="toggle">Menu</label>
             <input type="checkbox" id="drop">
             <ul class="menu mt-2">
-                <li class="active"><a href="index.html">Главная</a></li>
+                <li class="active"><a href="index.html">Головна</a></li>
                 <li><a href="#">Про нас</a></li>
                 <li>
                     <!-- First Tier Drop Down -->
-                    <label for="drop-2" class="toggle">Категории <span class="fa fa-angle-down"
+                    <label for="drop-2" class="toggle">Категорії<span class="fa fa-angle-down"
                                                                        aria-hidden="true"></span> </label>
-                    <a href="#">Категории <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#">Категорії<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <input type="checkbox" id="drop-2">
                     <ul>
                         {% get_categories as categories %}
@@ -31,7 +30,7 @@
                     </ul>
                 </li>
                 <li><a href="contact.html"
-                       style="color: rgb(255, 255, 255); font-weight: 700; text-transform: uppercase;">Вход</a>
+                       style="color: rgb(255, 255, 255); font-weight: 700; text-transform: uppercase;">Вхід</a>
                 </li>
             </ul>
         </nav>
@@ -41,12 +40,8 @@
 <!-- //header -->
 <!--/banner-->
 <div class="banner-info">
-    <p class="editContent">лучший сайт на django 3</p>
-    <h3 class="mb-4 editContent">Все о кино</h3>
-    <div class="ban-buttons">
-
-
-    </div>
+    <p class="editContent">Кращі фільми</p>
+    <h3 class="mb-4 editContent">Все про кіно</h3>
 </div>
 <!--// banner-inner -->
 
